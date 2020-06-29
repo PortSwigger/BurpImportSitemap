@@ -1,0 +1,5 @@
+<p>Using Import to Sitemap Extension</p>
+
+<p>Once the extension has been loaded into Burp, an additional tab called "Import Sitemap" is added. This new tab has a number of buttons to select and load a CSV file.</p>
+
+<p>In addition, there is a checkbox called "Enable Fakeparam Trick", which is enabled by default. When enabled, a new artificial parameter "wstalkerfakeparam" is added to each request. The reason to do this is because sitemap does not add several requests with the same URL, so adding a fake parameter with random value will guarantee that every request/response is sucessfully imported.</p>

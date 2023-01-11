@@ -12,13 +12,13 @@ The following steps are needed:
 The resulting file should have the following format:
 
 ```
-==== 1 ==========
+===1 ==========
 GET https://whatever.com/foo/ HTTP/1.1
 [REQUEST]
 
 
 [RESPONSE]
-==== 2 ==========
+===2 ==========
 [...]
 ```
 

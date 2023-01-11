@@ -96,7 +96,7 @@ public class WSPanel extends JPanel {
         this.add(lblFakeParam, gbc);
 
         this.chkFakeParam = new JCheckBox("Enable Fakeparam Trick");
-        this.chkFakeParam.setSelected(true); // do the trick by default
+        this.chkFakeParam.setSelected(false); // no trick by default
         gbc.insets = new Insets(0, 0, 10, 0);
         gbc.gridx = 1;
         gbc.gridy++;

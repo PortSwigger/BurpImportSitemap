@@ -81,20 +81,20 @@ public class WStalker implements ITab, IBurpExtender, IContextMenuFactory {
             rs.add(x);
         }
         
-        // Create Default Menu (using fake parameter)
+        // Create Default Menu (NOT using fake parameter)
         JMenuItem itemDefault = new JMenuItem("Send To Sitemap");
         itemDefault.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                panel.sendToSitemap(rs, true);
+                panel.sendToSitemap(rs, false);
             }
         });
         items.add(itemDefault);
 
-        // Create Alternative Menu (NOT using fake parameter)
-        JMenuItem itemNoFakeParam = new JMenuItem("Send To Sitemap (no fakeparam)");
+        // Create Alternative Menu (using fake parameter)
+        JMenuItem itemNoFakeParam = new JMenuItem("Send To Sitemap (fakeparam)");
         itemNoFakeParam.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                panel.sendToSitemap(rs, false);
+                panel.sendToSitemap(rs, true);
             }
         });
         items.add(itemNoFakeParam);

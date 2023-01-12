@@ -107,11 +107,11 @@ public class WSImport {
         Iterator<String> i = lines.iterator();
 
         // Format:
-        // ==== [0-9]+ ==========
+        // ===[0-9]+ ==========
         // REQUEST
         // <empty>
         // RESPONSE
-        String reSeparator = "^==== [0-9]+ ==========$";
+        String reSeparator = "^=+ ?[0-9]+ ?=+$";
         String reResponse = "^HTTP/[0-9]\\.[0-9] [0-9]+ .*$";
 
         // Ignore first line, since it should be a separator

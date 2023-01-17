@@ -2,11 +2,12 @@ Uuid: aa17a344e1ac4c8c976dc0fe0d9994ca
 ExtensionType: 1
 Name: Import To Sitemap
 RepoName: import-to-sitemap
-ScreenVersion: 2020.05.05
-SerialVersion: 1
+ScreenVersion: 2023.01.11
+SerialVersion: 2
 MinPlatformVersion: 0
 ProOnly: False
 Author: NCC Group
 ShortDescription: Import wstalker CSV file or ZAP export file into Burp Sitemap.
 EntryPoint: build/libs/import-sitemap.jar
-BuildCommand: gradle fatJar
+BuildCommand: ./gradlew fatJar
+SupportedProducts: Pro, Community
